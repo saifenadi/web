@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="https://storage.googleapis.com/catalog-pictures-carrefour-es/catalog/pictures/hd_510x_/8445045019006_1.jpg" alt="altavoz">
+    <form action="procesar_pedido.php" method="post">
+        <label>Modelo:</label>
+        <select name="modelo" required>
+        <option value="R4">R4</option>
+        <option value="R5">R5</option>
+        <option value="SR1">SR1</option>
+        </select> <br>
+
+        <label>Potencia máxima (entre 50 y 100):</label>
+        <input type="number" name="potencia" min="50" max="100" required><br>
+
+        <label>¿Bluetooth?</label>
+        <select name="bluetooth" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select> <br>
+
+        <label>Color:</label>
+        <input type="text" name="color" required>
+
+        <button type="submit">Realizar Pedido</button>
+    </form>
+    
+</body>
+</html>
