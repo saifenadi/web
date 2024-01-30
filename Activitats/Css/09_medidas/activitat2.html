@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto de Escalera con CSS</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        .parrafo {
+            background-color: #3498db; 
+            color: #fff; 
+            padding: 10px; 
+            margin: 5px 0; 
+            transition: width 0.3s; 
+        }
+
+        .parrafo:nth-child(odd) {
+            width: 60%;
+        }
+
+        .parrafo:nth-child(even) {
+            width: 80%;
+        }
+        .parrafo:nth-child(even) {
+            width: 100%;
+        }
+        .parrafo:nth-child(even) {
+            width: 120%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parrafo">Este es el primer párrafo.</div>
+    <div class="parrafo">Este es el segundo párrafo.</div>
+    <div class="parrafo">Este es el tercer párrafo.</div>
+    <div class="parrafo">Este es el cuarto párrafo.</div>
+    <div class="parrafo">Este es el quinto párrafo.</div>
+
+</body>
+</html>
