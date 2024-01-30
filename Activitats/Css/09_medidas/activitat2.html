@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efecto de Escalera con CSS</title>
+    <title>Efecto de Escalado con CSS</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -11,11 +11,11 @@
         }
 
         .parrafo {
-            background-color: #3498db; 
+            background-color: #3498db;
             color: #fff; 
             padding: 10px; 
             margin: 5px 0; 
-            transition: width 0.3s; 
+            transition: transform 0.3s; 
         }
 
         .parrafo:nth-child(odd) {
@@ -25,11 +25,9 @@
         .parrafo:nth-child(even) {
             width: 80%;
         }
-        .parrafo:nth-child(even) {
-            width: 100%;
-        }
-        .parrafo:nth-child(even) {
-            width: 120%;
+
+        .parrafo:hover {
+            transform: scaleX(1.2); 
         }
     </style>
 </head>
