@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .x-ray-filter {
+            filter: invert(100%);
+            transition: filter 0.5s ease;
+        }
+
+        .image-container:hover .x-ray-filter {
+            filter: invert(0%);
+        }
+    </style>
+    <title>Imagen con Filtro de Radiografía</title>
+</head>
+<body>
+
+    <div class="image-container">
+        <img class="x-ray-filter" src="skeleton-retro-style-illustration-of-resting-skeleton-flat-vector.jpg" alt="Esqueleto" width="300" height="200">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista con Marcadores Cuadrados</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: "\25A0"; 
+            margin-right: 10px;
+            font-size: 10px;
+            color: #000; 
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Lorem.</li>
+        <li>Adipisci?</li>
+        <li>Libero.</li>
+    </ul>
+
+</body>
+</html>

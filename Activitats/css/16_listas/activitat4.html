@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista con Murciélagos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        li::before {
+            content: "\1F987"; 
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>bat-coche</li>
+        <li>bat-tarje</li>
+        <li>bat-cueva</li>
+    </ul>
+
+</body>
+</html>

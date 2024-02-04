@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .architecture {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .victoriana, .barroca, .moderna {
+            width: 100%;
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            max-height: 50vh; 
+        }
+
+        .explanation {
+            width: 100%;
+            max-height: 50vh; 
+            overflow-y: auto;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+    <title>Arquitecturas</title>
+</head>
+<body>
+    <div class="architecture victoriana">
+        <img class="image" src="victoriana.jpg" alt="Arquitectura Victoriana">
+        <div class="explanation">
+            <h2>Arquitectura Victoriana</h2>
+            <p>La arquitectura victoriana, que floreció durante el reinado de la Reina Victoria en el siglo XIX, se caracteriza por su elegancia y ornamentación detallada. Las casas victorianas suelen tener tejados empinados, ventanas de guillotina, y elementos decorativos como enrejados y molduras intrincadas. El estilo abarca desde el neogótico hasta el romántico, reflejando la opulencia de la época. [...]</p>
+        </div>
+    </div>
+
+    <div class="architecture barroca">
+        <img class="image" src="arquitectura-barroca.webp" alt="Arquitectura Barroca">
+        <div class="explanation">
+            <h2>Arquitectura Barroca</h2>
+            <p>La arquitectura barroca, originada en el siglo XVII, se caracteriza por su extravagancia y ornamentación exuberante. Los edificios barrocos suelen tener fachadas esculpidas, cúpulas ornamentadas y detalles decorativos opulentos. Este estilo arquitectónico refleja la grandiosidad y la teatralidad, buscando impresionar y expresar el poderío de la Iglesia o los gobernantes de la época. [...]</p>
+        </div>
+    </div>
+
+    <div class="architecture moderna">
+        <img class="image" src="moderna.jpg" alt="Arquitectura Moderna">
+        <div class="explanation">
+            <h2>Arquitectura Moderna</h2>
+            <p>La arquitectura moderna, surgida a principios del siglo XX, se caracteriza por su enfoque en la funcionalidad, la simplicidad y el uso de materiales modernos como el acero y el vidrio. Los edificios modernos tienden a tener líneas limpias y formas geométricas, evitando la ornamentación excesiva. Este estilo arquitectónico refleja la influencia de la tecnología y la búsqueda de soluciones innovadoras en el diseño arquitectónico. [...]</p>
+        </div>
+    </div>
+</body>
+</html>
