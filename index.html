@@ -14,19 +14,36 @@ body{
       background-repeat: no-repeat;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       text-align: center;
-      padding-top: 50px;
+      padding-top: 40px;
       
 }
+h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #ebb8b8;
+      position: absolute;
+      top: 40%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      z-index: 1; 
+      font-size: 6em;
+      text-shadow: 2px 2px 4px rgba(98, 0, 255, 0.5); 
+      padding: 20px;
+    
+    }
 
     .saif {
+      float: right;
       background-color: #000000;
       overflow: hidden;
       position: fixed;
       top: 0;
       width: 100%;
     }
+    .saif img {
+      margin-right: 900px;
+    }
     .saif a {
-      float: left;
+      float: right;
       display: block;
       color: #7505ff;
       text-align: center;
@@ -36,23 +53,38 @@ body{
     .saif a:hover {
       background-color: #c57dfc;
       color: rgb(2, 21, 232);
+  
     }
-    
+    .saif img {
+      margin-right: 20px;
+      transition: filter 0.3s ease;
+      }
+      .saif img:hover {
+      filter: brightness(0); 
+}
     
   </style>
 </head>
 <body>
-
 <div class="saif">
+  <img src="Activitats/gengar1.png" alt="logo" height="50px">
   <a href="Activitats/activitats.html" class="boton">activitats html</a>
   <a href="Activitats/activitatscss.html">activitats css</a>
   <a href="Activitats/contacte.html">contacte</a>
   <a href="Activitats/curriculum.html">curriculum</a>
 </div>
 
-
+<h1>Portfoli</h1>
+<img src="Activitats/gengar.png" alt="" height="700px">
 
 </div>
+<footer>
+  <p>Propiedad de Saif - Todos los derechos reservados &copy; 2024</p>
+  <div>
+    <a href="https://twitter.com/EnadiSaife31524">Twitter</a>
+    <a href="https://www.instagram.com/saiff__006/">Instagram</a>
+  </div>
+</footer>
 </body>
 </html>
 
