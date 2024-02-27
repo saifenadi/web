@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista con Marcadores Corazones</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: "\2665"; 
+            margin-right: 10px;
+            font-size: 20px;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Lorem.</li>
+        <li>Adipisci?</li>
+        <li>Libero.</li>
+    </ul>
+
+</body>
+</html>

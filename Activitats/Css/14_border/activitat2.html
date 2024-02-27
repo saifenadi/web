@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto con Recuadro Naranja</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .photo-container {
+            border: 10px solid #ff4800; 
+            padding: 10px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo-container::before,
+        .photo-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 10px;
+            background: linear-gradient(to bottom, #ff4800 50%, white 50%);
+        }
+
+        .photo-container::before {
+            left: -10px;
+            border-top-left-radius: 50px; 
+            border-bottom-left-radius: 50px;
+        }
+
+        .photo-container::after {
+            right: -10px;
+            border-top-right-radius: 50px; 
+            border-bottom-right-radius: 50px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="photo-container">
+        <img src="10-monstruo (1).png" alt="Foto">
+    </div>
+
+</body>
+</html>
+
+

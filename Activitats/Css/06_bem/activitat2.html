@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Comentarios Sencillo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ec8d8d;
+            margin: 20px;
+        }
+
+        #comentarios {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .comentario {
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #9cadd1;
+            color: #000000;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="comentarios">
+        <div class="comentario">
+            <strong>Usuario1:</strong> ¡Qué interesante! Me encanta este sistema de comentarios.
+        </div>
+
+        <div class="comentario">
+            <strong>Usuario2:</strong> ¡Gracias por compartir! Estoy emocionado de probarlo.
+        </div>
+    </div>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <input type="submit" value="Comentar">
+    </form>
+</body>
+</html>
